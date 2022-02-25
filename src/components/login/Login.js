@@ -79,6 +79,29 @@ class Login extends React.Component {
                         <p className="mt-5 mb-3 text-muted">© 2022</p>
                     </form>
                 </div>
+                <footer>
+                <small>
+                    © {new Date().getFullYear()} Desarrollado por - {' '}
+                    <a target="_blank" rel="noopener noreferrer">
+                        SysSoftIntegra
+                    </a>
+                </small>
+                <br />
+                {/* <div className="social-bagdes">
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img
+                            alt="GitHub followers"
+                            src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social"
+                        />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <img
+                            alt="Twitter Follow"
+                            src="https://img.shields.io/twitter/follow/azouaoui_med?label=twitter&style=social"
+                        />
+                    </a>
+                </div> */}
+            </footer>
             </>
         );
     }

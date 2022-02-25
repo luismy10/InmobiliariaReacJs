@@ -8,7 +8,7 @@ import {
     SidebarFooter,
     SidebarContent,
 } from 'react-pro-sidebar';
-import {Redirect,Link, } from 'react-router-dom';
+import { Redirect, Link, } from 'react-router-dom';
 
 import "react-pro-sidebar/dist/css/styles.css";
 import logoEmpresa from '../../../recursos/images/inmobiliarianav.png';
@@ -26,7 +26,7 @@ class Menu extends React.Component {
             collapsed: false,
             toggled: false
         }
-        
+
     }
 
     handleToggleSidebar = (value) => {
@@ -72,20 +72,24 @@ class Menu extends React.Component {
                                 <MenuItem>Accesos</MenuItem>
                             </SubMenu>
 
-                            <SubMenu
-                                prefix={<span className="badge gray">3</span>}
-                                title={'Facturacion'}
-                                icon={<i className="bi bi-file-earmark-bar-graph-fill"></i>}
-                                id='facturacion'
-                            >
+                            <SubMenu title={'Facturacion'} icon={<i className="bi bi-file-earmark-bar-graph-fill"></i>} id='facturacion' style={{ fontWeight: 'bold' }}>
                                 <MenuItem id='clientes'>
                                     <Link to='/clientes' style={{ fontWeight: 'bold' }}>Clientes</Link>
                                 </MenuItem>
-                                <MenuItem>Ventas</MenuItem>
-                                <MenuItem>Créditos</MenuItem>
-                                <MenuItem> <Link to='/cobros' style={{ fontWeight: 'bold' }}>Cobros</Link></MenuItem>
-                                <MenuItem>Cotizaciones</MenuItem>
-                                <MenuItem>Reservas</MenuItem>
+                                <MenuItem>
+                                    <Link to='/ventas' style={{ fontWeight: 'bold' }}>Ventas</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <Link to='/creditos' style={{ fontWeight: 'bold' }}>Créditos</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <Link to='/cobros' style={{ fontWeight: 'bold' }}>Cobros</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <Link to='/cotizaciones' style={{ fontWeight: 'bold' }}>Cotizaciones</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                <Link to='/reservas' style={{ fontWeight: 'bold' }}>Reservas</Link></MenuItem>
                             </SubMenu>
 
                             <SubMenu
@@ -128,7 +132,7 @@ class Menu extends React.Component {
                                 <MenuItem>R. Lotes</MenuItem>
                                 <MenuItem>R. Clientes</MenuItem>
                             </SubMenu>
-                         
+
                         </Main>
                     </SidebarContent>
                 </ProSidebar>

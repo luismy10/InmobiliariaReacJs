@@ -9,6 +9,10 @@ import Dashboard from './components/dashboard/Dashboard';
 import NotFound from './components/error/NotFound';
 import Clientes from './components/facturacion/Clientes';
 import Cobros from './components/facturacion/Cobros';
+import Cotizaciones from './components/facturacion/Cotizaciones';
+import Creditos from './components/facturacion/Creditos';
+import Reservas from './components/facturacion/Reservas';
+import Ventas from './components/facturacion/Ventas';
 import './styles/App.scss';
 
 import {
@@ -51,7 +55,7 @@ class App extends React.Component {
                 <div className='app toggled'>
                     <Menu ref={this.menuRef} />
                     <main>
-                        <Head setOpen={this.setOpen} setMinimun={this.setMinimun}/>
+                        <Head setOpen={this.setOpen} setMinimun={this.setMinimun} />
 
                         <Switch>
                             <Route
@@ -83,6 +87,26 @@ class App extends React.Component {
                                 path="/cobros"
                                 exact={true}
                                 render={(props) => <Cobros />}
+                            />
+                            <Route
+                                path="/cotizaciones"
+                                exact={true}
+                                render={(props) => <Cotizaciones />}
+                            />
+                            <Route
+                                path="/creditos"
+                                exact={true}
+                                render={(props) => <Creditos />}
+                            />
+                            <Route
+                                path="/reservas"
+                                exact={true}
+                                render={(props) => <Reservas />}
+                            />
+                            <Route
+                                path="/ventas"
+                                exact={true}
+                                render={(props) => <Ventas />}
                             />
                             <Route component={NotFound} />
                         </Switch>

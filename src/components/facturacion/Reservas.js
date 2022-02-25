@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Ventas extends React.Component {
+class Reservas extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -11,7 +11,7 @@ class Ventas extends React.Component {
                 <div className='row pb-3'>
                     <div className='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                         <section className="content-header">
-                        <h5 className="no-margin"> Ventas <small style={{ color: 'gray'}}> Lista </small> </h5>
+                        <h5 className="no-margin"> Reservas <small style={{ color: 'gray'}}> Lista </small> </h5>
                         </section>
                     </div>
                 </div>
@@ -24,4 +24,4 @@ class Ventas extends React.Component {
     }
 }
 
-export default Ventas;
+export default Reservas;
