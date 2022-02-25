@@ -14,17 +14,64 @@ class Clientes extends React.Component {
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 className="modal-title" id="exampleModalLabel">Agregar nuevo cliente</h5>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div className="modal-body">
-                                ...
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >Nombre (s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >apellidos (s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >apellidos (s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >Dni/Ruc(s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >Telefono (s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
+                                <div className='row py-1'>
+                                    <div className='col-lg-4 colmd-4 col-sm-12 col-xs-12'>
+                                        <label >Observacion (s)</label>
+                                    </div>
+                                    <div className='col-lg-8 colmd-8 col-sm-12 col-xs-12'>
+                                        <input  class="form-control" aria-describedby="emailHelp"/>
+                                    </div>
+                                </div>
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary">Save changes</button>
+                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" className="btn btn-primary">Guardar</button>
                             </div>
                         </div>
                     </div>
